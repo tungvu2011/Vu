@@ -1,0 +1,661 @@
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Draggable = true
+ImageButton.Image = "http://www.roblox.com/asset/?id=15059956542"
+
+UICorner.CornerRadius = UDim.new(1, 10) 
+UICorner.Parent = ImageButton
+
+ImageButton.MouseButton1Down:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+end)
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+repeat wait() until game:IsLoaded()
+local Window = Fluent:CreateWindow({
+    Title = "sam-mô-king =}",
+    SubTitle = "menu by mô  ?",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(450, 300),
+    Acrylic = true,
+    Theme = "Amethyst",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+        Main0=Window:AddTab({ Title="một số kênh🤓" }),
+        Main1=Window:AddTab({ Title="grow a gaden 🌱🌴🌵🌲" }),
+        Main2=Window:AddTab({ Title="bran rót💩" }),
+        Main3=Window:AddTab({ Title="99 đêm🥷" }),
+        Main4=Window:AddTab({ Title="blox fruit🍎" }),
+       Main5=Window:AddTab({ Title="plan vs branro🌲🐘t" }),
+       Settings = Window:AddTab({ Title = "⚙️Cài đặt" }),
+       Main6=Window:AddTab({ Title="chức năng linh tinh" }),
+}
+    Tabs.Main0:AddButton({
+    Title = "tiktok bạn:)",
+    Description = "oách xà lách vô cùng",
+    Callback = function()
+        setclipboard("https://www.tiktok.com/@jannie3342?_t=ZS-90QsJQ5j0NO&_r=1")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "tik",
+    Description = "làm chơi thui",
+    Callback = function()
+        setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHokNlwN&_r=1")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "tiktok",
+    Description = "fl tiktok để biết thêm nhiều script",
+    Callback = function()
+        setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHmSjaiu&_r=1")
+    end
+})
+Tabs.Main1:AddButton({
+    Title="speed hub🌱",
+    Description="script này ngon á đủ chức năng cả😃",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="ThundeZ⚡",
+    Description="cái này cũng ngon ",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThundeZ/GrowAGardenScript/refs/heads/main/ThunderZHub.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="Nathub",
+    Description="ổn 😋",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://get.nathub.xyz/loader"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="utopia",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="airhub",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/og2xn/AirHubs/refs/heads/main/Protected_3429231241525986.lua"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="moondiety",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader'))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="B0oe",
+    Description="còn dùng đc",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://pastefy.app/B0oeOAsg/raw"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="VN 🇻🇳🇻🇳🇻🇳",
+    Description="script của ng việt làm 🇻🇳",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/replit8173/VietnamHub/refs/heads/main/VietnamseHub.lua", true))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="chillhub😌",
+    Description="cái này ổn dùng ngon no key",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="ajjan👨‍💻",
+    Description=" script này điều khiển cả ng chơi luôn mà 😀",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/onliengamerop/Steal-a-brainrot/refs/heads/main/Protected_3771863424757750.lua.txt"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="Lemon update",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://pastefy.app/MJw2J4T6/raw"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="Kurdhub😍",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninja10908/S4/refs/heads/main/Kurdhub"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="khngscript hub",
+    Description="duper bram rot",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScript-cmd/Khangdz28/refs/heads/main/KhgScripttt"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="script tạo seven vip",
+    Description="tạo seven vip",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoshzzAlteregooo/FreePrivateServer/refs/heads/main/UniversalFreePrivateServerByJoshzz"))()
+  end
+})
+
+Tabs.Main2:AddButton({
+    Title="ZZZz hub ",
+    Description="cướp tàng hình",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://pastefy.app/DHyT4Zoi/raw"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="bonkhub",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://bonkhub.online/loader.lua",true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="1 bản khá ngon ới",
+    Description="ko nên quay có nhạc bản quyền",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkenedEssence/Elude/refs/heads/main/External/Diamond/ELUDESJI.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="fam kẹo cps 😋🍥",
+    Description="mới nên còn dùng đc",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c87b3621b22ecc2c8b474f95c47ecb40.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="fam keo siêu xịn :))",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MQPS7/99-Night-in-the-Forset/refs/heads/main/CandyFarm'))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="FNdayfam",
+    Description=" Siêu script vừa fam ngày vừa kim cương siêu ngon",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet('https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FNDayFarm.lua'))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="thunder",
+    Description="cái này auto đam ngày và kc",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NAVAAI098/Thunder-Hub/main/Kaitun.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="combo new😍",
+    Description="no key ngon á full tiếng việt",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/checkurasshole/Trt/refs/heads/main/999NIGH"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="FoxnameHub",
+    Description="cái này no key mà ngon 😋",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="H4x",
+    Description="có key ngon lắm😋😋",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader.lua", true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="NEW script",
+    Description=" key nè (toatsyissexy) có thể sẽ thay đổi",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nouralddin-abdullah/99-night/refs/heads/main/main-en.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="auto chơi game",
+    Description=" nokey",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/DayFarm%E2%84%A2",true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="auto đam kim cương",
+    Description=" ngon á nó chỉ tìm sever có kim cương chỉ cần bật",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+getgenv().hop = "old"
+getgenv().reducelag = true
+getgenv().blackscreen = false
+getgenv().AutoFarm = false
+getgenv().autoexecuter = true
+getgenv().WebhookURL = "" --If not used do not write anything
+loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameFarmdiamond.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="void",
+    Description="nokey ",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="cps",
+    Description="._.",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="bất con mẹ nó tử",
+    Description=" chỉ bất tử no key",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ProBaconHub/DATABASE/refs/heads/main/99%20Nights%20in%20the%20Forest/Infinite%20Health.lua"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="auto fam diamon",
+    Description=" đểu hơn bản trên",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/Framkimcuong",true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="vector",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful /Vector_Hub/0/v2"))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title=".fam diamon",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MQPS7/99-Night-in-the-Forset/refs/heads/main/Gfarm'))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="auto fam kc cps",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/CpsX",true))()
+  end
+})
+
+Tabs.Main3:AddButton({
+    Title="cps hub",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()
+  end
+})
+
+Tabs.Main4:AddButton({
+    Title="Red😍",
+    Description="ngon nhất hiênh tại r",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+  end
+})
+
+Tabs.Main4:AddButton({
+    Title="BlueX",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
+  end
+})
+
+Tabs.Main5:AddButton({
+    Title="speed hub",
+    Description="khá ổn đầy đủ",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  end
+})
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local StarterGui = game:GetService("StarterGui")
+
+Tabs.Settings:AddToggle("LagFix_Super", {
+    Title = "🧹 Fix Lag  siêu cấp xoá",
+    Description = "Xoá toàn bộ map, giữ lại nhân vật và đồ hoạ cơ bản nhất",
+    Default = false,
+    Callback = function(state)
+        if state then
+            -- Thông báo GUI
+            StarterGui:SetCore("SendNotification", {
+                Title = "⚙️ Fix Lag Siêu Mạnh",
+                Text = "Đang xoá map và giảm đồ hoạ...",
+                Duration = 4
+            })
+
+            -- Giảm chất lượng hình ảnh
+            settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+            game.Lighting.GlobalShadows = false
+            game.Lighting.FogEnd = 9e9
+
+            -- Xoá map lớn: chỉ giữ lại nhân vật và camera
+            for _,v in pairs(workspace:GetChildren()) do
+                if not (v == LocalPlayer.Character or v.Name == "Camera" or v:FindFirstChildOfClass("Humanoid")) then
+                    v:Destroy()
+                end
+            end
+
+            -- Xoá mọi hiệu ứng
+            for _,v in pairs(workspace:GetDescendants()) do
+                if v:IsA("Decal") or v:IsA("Texture") or v:IsA("ParticleEmitter") or v:IsA("Trail") or v:IsA("Smoke") then
+                    v:Destroy()
+                elseif v:IsA("BasePart") then
+                    v.Material = Enum.Material.Plastic
+                    v.Reflectance = 0
+                end
+            end
+
+            StarterGui:SetCore("SendNotification", {
+                Title = "✅ Thành công!",
+                Text = "Fix lag siêu mạnh đã bật. Map lớn đã bị xoá.",
+                Duration = 5
+            })
+            print("🔥 Fix lag siêu mạnh đã bật - map lớn đã bị xoá")
+
+        else
+            StarterGui:SetCore("SendNotification", {
+                Title = "❌ Đã tắt Fix Lag",
+                Text = "Muốn khôi phục map thì reload game nha.",
+                Duration = 5
+            })
+            print("❌ Fix lag siêu mạnh đã tắt (cần reload map để khôi phục)")
+        end
+    end
+})
+Tabs.Settings:AddToggle("AutoFixLag", {
+    Title = "⚙️ Fix Lag Pro",
+    Description = "Bật để tự tối ưu hiệu suất liên tục",
+    Default = false,
+    Callback = function(state)
+        if state then
+            -- Khi bật ✅
+            print("🟢 Đã bật Auto Fix Lag")
+
+            -- ⚙️ Toàn bộ code fix lag auto
+            local Players = game:GetService("Players")
+            local Lighting = game:GetService("Lighting")
+            local Workspace = game:GetService("Workspace")
+            local RunService = game:GetService("RunService")
+            local player = Players.LocalPlayer
+
+            local function safeCall(fn, ...)
+                local ok, res = pcall(fn, ...)
+                return ok, res
+            end
+
+            local function applyLightingFix()
+                safeCall(function()
+                    Lighting.GlobalShadows = false
+                    Lighting.FogEnd = 999999
+                    Lighting.FogStart = 999999
+                    Lighting.Brightness = 1
+                    Lighting.EnvironmentDiffuseScale = 0
+                    Lighting.EnvironmentSpecularScale = 0
+                    for _, e in ipairs(Lighting:GetChildren()) do
+                        if e:IsA("BlurEffect") or e:IsA("BloomEffect")
+                        or e:IsA("ColorCorrectionEffect") or e:IsA("DepthOfFieldEffect")
+                        or e:IsA("SunRaysEffect") or e:IsA("Atmosphere") then
+                            e.Enabled = false
+                        end
+                    end
+                end)
+            end
+
+            local function applyTerrainFix()
+                safeCall(function()
+                    local t = Workspace:FindFirstChildOfClass("Terrain")
+                    if t then
+                        t.WaterWaveSize = 0
+                        t.WaterReflectance = 0
+                        t.WaterTransparency = 1
+                        t.Decoration = false
+                    end
+                end)
+            end
+
+            local function applyCameraFix()
+                safeCall(function()
+                    local cam = Workspace.CurrentCamera
+                    if cam then cam.FieldOfView = 70 end
+                end)
+            end
+
+            local function applyPlayerFix()
+                safeCall(function()
+                    if player and player.Character then
+                        for _, c in ipairs(player.Character:GetChildren()) do
+                            if c:IsA("Accessory") or c:IsA("Clothing") or c:IsA("Shirt") or c:IsA("Pants") then
+                                c:Destroy()
+                            end
+                        end
+                    end
+                end)
+            end
+
+            local function applyObjectSimplify(obj)
+                safeCall(function()
+                    if not obj or not obj.Parent then return end
+                    if obj:IsA("ParticleEmitter") or obj:IsA("Trail") or obj:IsA("Beam")
+                    or obj:IsA("Smoke") or obj:IsA("Fire") or obj:IsA("Sparkles") then
+                        obj.Enabled = false
+   
