@@ -1,9 +1,6 @@
--- ✅ MẪU CHUẨN CHO NGƯỜI MỚI | TÉO HUB 🍎
--- Giữ nguyên giao diện thật, chỉ thêm hướng dẫn 👈 ngay bên cạnh dòng cần sửa
 
 repeat task.wait() until game:IsLoaded()
 
--- 🟢 Nút mở menu chính
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -26,11 +23,9 @@ ImageButton.MouseButton1Down:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
 
--- 🟣 Giao diện Fluent
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 repeat wait() until game:IsLoaded()
 
--- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
 	Title = "sam-mô-king =}",
 	SubTitle = "vip💎😍",
@@ -82,6 +77,16 @@ Tabs.Main0:AddButton({
 -- TAB 2: Ví dụ thêm script
 ------------------------------------------------
 Tabs.Main1:AddButton({
+	Title = "auto🌱",                             -- 👈 tên nút hiển thị
+	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
+	Callback = function()
+		local Settings = {
+			JoinTeam = "Pirates";   -- 👈 team mặc định: Pirates hoặc Marines
+			Translator = true;      -- 👈 bật dịch sang tiếng Việt nếu có
+		}
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))() -- 👈 link script tải
+	end
+})
 	Title = "auto🌱",                             -- 👈 tên nút hiển thị
 	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
 	Callback = function()
