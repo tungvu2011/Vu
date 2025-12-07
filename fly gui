@@ -102,7 +102,7 @@ TextLabel.Size = UDim2.new(0, 100, 0, 28)
 
 TextLabel.Font = Enum.Font.Arcade
 
-TextLabel.Text = "XVIDEOS"
+TextLabel.Text = "sam-mo"
 
 TextLabel.TextColor3 = Color3.fromRGB(128, 0, 0)
 
